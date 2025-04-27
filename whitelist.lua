@@ -18,7 +18,7 @@ koolwl.data = suc and type(res) == 'table' and res or koolwl.data
 
 function koolwl:check()
     if self.checked then return self.leve, self.attackable end
-    self.checked - true
+    self.checked = true
     for i,v in pairs(self.data.WhitelistedUsers) do
         if tostring(lplr.UserId) == i then
             self.level = v.level
